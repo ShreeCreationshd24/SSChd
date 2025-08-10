@@ -1,0 +1,1297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Creation HD - Handcrafted Jute Products</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#8B5A3C',secondary:'#D2B48C'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.floating-cart {
+transform: translateX(100%);
+transition: transform 0.3s ease-in-out;
+}
+.floating-cart.open {
+transform: translateX(0);
+}
+.product-card {
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.cart-overlay {
+display: none;
+background: rgba(0,0,0,0.5);
+}
+.cart-overlay.active {
+display: block;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center space-x-4">
+<h1 class="text-2xl font-['Pacifico'] text-primary">Shree Creation HD</h1>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#jute-mats" class="text-gray-700 hover:text-primary transition-colors">Table Mats</a>
+<a href="#jute-baskets" class="text-gray-700 hover:text-primary transition-colors">Baskets & Bags</a>
+<a href="#wall-hangings" class="text-gray-700 hover:text-primary transition-colors">Wall Hangings</a>
+<a href="#christmas-decor" class="text-gray-700 hover:text-primary transition-colors">Christmas Decor</a>
+<a href="#napkin-rings" class="text-gray-700 hover:text-primary transition-colors">Napkin Rings</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button onclick="toggleCart()" class="relative bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-shopping-cart-line"></i>
+</div>
+<span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-r from-primary/10 to-secondary/10 py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Handcrafted Jute Products</h2>
+<p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Discover our exquisite collection of eco-friendly jute handicrafts, meticulously crafted by skilled artisans</p>
+<div class="flex items-center justify-center space-x-6 text-sm text-gray-600">
+<div class="flex items-center space-x-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-phone-line"></i>
+</div>
+<span>74280 55781</span>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-whatsapp-line"></i>
+</div>
+<span>74280 55781</span>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-instagram-line"></i>
+</div>
+<span>shreecreationhd</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Jute Table Mats/Rugs -->
+<section id="jute-mats" class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h3 class="text-3xl font-bold text-gray-900 mb-4">Jute Table Mats & Rugs</h3>
+<p class="text-gray-600">Elegant and durable table mats and rugs crafted from premium jute fibers</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- JTM-001 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-001">
+<div class="aspect-square overflow-hidden">
+<img src="1.jpg" alt="Jute Table Mat 001" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-001</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Geometric Pattern Mat</p>
+<p class="text-xs text-gray-600 mb-3">Handwoven jute table mat with intricate geometric design</p>
+<button onclick="addToCart('JTM-001', 'Geometric Pattern Mat')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-002 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-002">
+<div class="aspect-square overflow-hidden">
+<img src="2.jpg" alt="Jute Table Mat 002" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-002</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Round Braided Mat</p>
+<p class="text-xs text-gray-600 mb-3">Circular jute placemat with elegant braided border</p>
+<button onclick="addToCart('JTM-002', 'Round Braided Mat')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-003 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-003">
+<div class="aspect-square overflow-hidden">
+<img src="3.jpg" alt="Jute Table Mat 003" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-003</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Fringed Table Runner</p>
+<p class="text-xs text-gray-600 mb-3">Elegant jute table runner with decorative fringe</p>
+<button onclick="addToCart('JTM-003', 'Fringed Table Runner')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-004 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-004">
+<div class="aspect-square overflow-hidden">
+<img src="4.jpg" alt="Jute Table Mat 004" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-004</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Chevron Oval Mat</p>
+<p class="text-xs text-gray-600 mb-3">Oval jute mat with stylish chevron weave pattern</p>
+<button onclick="addToCart('JTM-004', 'Chevron Oval Mat')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-005 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-005">
+<div class="aspect-square overflow-hidden">
+<img src="5.jpg" alt="Jute Table Mat 005" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-005</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Square Coaster Set</p>
+<p class="text-xs text-gray-600 mb-3">Set of handwoven square jute coasters</p>
+<button onclick="addToCart('JTM-005', 'Square Coaster Set')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-006 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-006">
+<div class="aspect-square overflow-hidden">
+<img src="6.jpg" alt="Jute Table Mat 006" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-006</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Honeycomb Hex Mat</p>
+<p class="text-xs text-gray-600 mb-3">Unique hexagonal mat with honeycomb weave</p>
+<button onclick="addToCart('JTM-006', 'Honeycomb Hex Mat')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-007 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-007">
+<div class="aspect-square overflow-hidden">
+<img src="7.jpg" alt="Jute Table Mat 007" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-007</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Diamond Weave Mat</p>
+<p class="text-xs text-gray-600 mb-3">Rectangular mat with elegant diamond pattern</p>
+<button onclick="addToCart('JTM-007', 'Diamond Weave Mat')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-008 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-008">
+<div class="aspect-square overflow-hidden">
+<img src="8.jpg" alt="Jute Table Mat 008" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-008</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Spiral Round Rug</p>
+<p class="text-xs text-gray-600 mb-3">Circular jute rug with mesmerizing spiral pattern</p>
+<button onclick="addToCart('JTM-008', 'Spiral Round Rug')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-009 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-009">
+<div class="aspect-square overflow-hidden">
+<img src="9.jpg" alt="Jute Table Mat 009" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-009</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Herringbone Placemat</p>
+<p class="text-xs text-gray-600 mb-3">Classic herringbone pattern jute placemat</p>
+<button onclick="addToCart('JTM-009', 'Herringbone Placemat')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-010 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-010">
+<div class="aspect-square overflow-hidden">
+<img src="10.jpg" alt="Jute Table Mat 010" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-010</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Rope Border Runner</p>
+<p class="text-xs text-gray-600 mb-3">Oval runner with decorative twisted rope edge</p>
+<button onclick="addToCart('JTM-010', 'Rope Border Runner')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-011 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-011">
+<div class="aspect-square overflow-hidden">
+<img src="11.jpg" alt="Jute Table Mat 011" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-011</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Basket Weave Trivet</p>
+<p class="text-xs text-gray-600 mb-3">Heat-resistant square trivet with basket weave</p>
+<button onclick="addToCart('JTM-011', 'Basket Weave Trivet')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JTM-012 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JTM-012">
+<div class="aspect-square overflow-hidden">
+<img src="12.jpg" alt="Jute Table Mat 012" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JTM-012</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Scalloped Charger</p>
+<p class="text-xs text-gray-600 mb-3">Elegant round charger with scalloped edge</p>
+<button onclick="addToCart('JTM-012', 'Scalloped Charger')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Jute Baskets/Handbags -->
+<section id="jute-baskets" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h3 class="text-3xl font-bold text-gray-900 mb-4">Jute Baskets & Handbags</h3>
+<p class="text-gray-600">Stylish and functional baskets and handbags woven from sustainable jute fibers</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- JBH-001 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-001">
+<div class="aspect-square overflow-hidden">
+<img src="13.jpg" alt="Jute Basket 001" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-001</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Rope Handle Basket</p>
+<p class="text-xs text-gray-600 mb-3">Cylindrical storage basket with sturdy rope handles</p>
+<button onclick="addToCart('JBH-001', 'Rope Handle Basket')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-002 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-002">
+<div class="aspect-square overflow-hidden">
+<img src="14.jpg" alt="Jute Handbag 002" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-002</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Classic Tote Bag</p>
+<p class="text-xs text-gray-600 mb-3">Spacious jute tote with comfortable long handles</p>
+<button onclick="addToCart('JBH-002', 'Classic Tote Bag')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-003 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-003">
+<div class="aspect-square overflow-hidden">
+<img src="15.jpg" alt="Jute Basket 003" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-003</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Lidded Laundry Basket</p>
+<p class="text-xs text-gray-600 mb-3">Round basket with matching woven lid</p>
+<button onclick="addToCart('JBH-003', 'Lidded Laundry Basket')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-004 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-004">
+<div class="aspect-square overflow-hidden">
+<img src="16.jpg" alt="Jute Handbag 004" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-004</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Crossbody Sling Bag</p>
+<p class="text-xs text-gray-600 mb-3">Compact crossbody bag with adjustable strap</p>
+<button onclick="addToCart('JBH-004', 'Crossbody Sling Bag')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-005 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-005">
+<div class="aspect-square overflow-hidden">
+<img src="17.jpg" alt="Jute Basket 005" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-005</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Magazine Holder Basket</p>
+<p class="text-xs text-gray-600 mb-3">Oval basket perfect for magazines and books</p>
+<button onclick="addToCart('JBH-005', 'Magazine Holder Basket')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-006 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-006">
+<div class="aspect-square overflow-hidden">
+<img src="18.jpg" alt="Jute Handbag 006" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-006</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Zippered Beach Bag</p>
+<p class="text-xs text-gray-600 mb-3">Large beach bag with secure zipper closure</p>
+<button onclick="addToCart('JBH-006', 'Zippered Beach Bag')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-007 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-007">
+<div class="aspect-square overflow-hidden">
+<img src="19.jpg" alt="Jute Basket 007" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-007</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Toy Storage Basket</p>
+<p class="text-xs text-gray-600 mb-3">Square basket with liner for toy organization</p>
+<button onclick="addToCart('JBH-007', 'Toy Storage Basket')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-008 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-008">
+<div class="aspect-square overflow-hidden">
+<img src="20.jpg" alt="Jute Handbag 008" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-008</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Button Closure Shoulder Bag</p>
+<p class="text-xs text-gray-600 mb-3">Structured shoulder bag with decorative button</p>
+<button onclick="addToCart('JBH-008', 'Button Closure Shoulder Bag')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-009 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-009">
+<div class="aspect-square overflow-hidden">
+<img src="21.jpg" alt="Jute Basket 009" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-009</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Plant Basket Planter</p>
+<p class="text-xs text-gray-600 mb-3">Tall basket perfect for indoor plants</p>
+<button onclick="addToCart('JBH-009', 'Plant Basket Planter')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-010 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-010">
+<div class="aspect-square overflow-hidden">
+<img src="22.jpg" alt="Jute Handbag 010" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-010</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Wrist Strap Clutch</p>
+<p class="text-xs text-gray-600 mb-3">Elegant clutch purse with convenient wrist strap</p>
+<button onclick="addToCart('JBH-010', 'Wrist Strap Clutch')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-011 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-011">
+<div class="aspect-square overflow-hidden">
+<img src="23.jpg" alt="Jute Basket 011" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-011</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Hinged Picnic Basket</p>
+<p class="text-xs text-gray-600 mb-3">Traditional picnic basket with hinged lid</p>
+<button onclick="addToCart('JBH-011', 'Hinged Picnic Basket')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- JBH-012 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="JBH-012">
+<div class="aspect-square overflow-hidden">
+<img src="24.jpg" alt="Jute Handbag 012" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">JBH-012</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Drawstring Gift Bag</p>
+<p class="text-xs text-gray-600 mb-3">Mini gift bag with decorative drawstring</p>
+<button onclick="addToCart('JBH-012', 'Drawstring Gift Bag')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Wall Hangings -->
+<section id="wall-hangings" class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h3 class="text-3xl font-bold text-gray-900 mb-4">Wall Hangings</h3>
+<p class="text-gray-600">Beautiful handwoven jute wall art to enhance your living spaces</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- WH-001 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-001">
+<div class="aspect-square overflow-hidden">
+<img src="25.jpg" alt="Wall Hanging 001" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-001</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Macrame Circle Art</p>
+<p class="text-xs text-gray-600 mb-3">Circular macrame with intricate geometric design</p>
+<button onclick="addToCart('WH-001', 'Macrame Circle Art')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-002 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-002">
+<div class="aspect-square overflow-hidden">
+<img src="26.jpg" alt="Wall Hanging 002" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-002</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Mandala Tapestry</p>
+<p class="text-xs text-gray-600 mb-3">Rectangular tapestry with sacred mandala pattern</p>
+<button onclick="addToCart('WH-002', 'Mandala Tapestry')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-003 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-003">
+<div class="aspect-square overflow-hidden">
+<img src="27.jpg" alt="Wall Hanging 003" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-003</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Diamond Fringe Art</p>
+<p class="text-xs text-gray-600 mb-3">Diamond-shaped hanging with decorative fringe</p>
+<button onclick="addToCart('WH-003', 'Diamond Fringe Art')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-004 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-004">
+<div class="aspect-square overflow-hidden">
+<img src="28.jpg" alt="Wall Hanging 004" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-004</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Tiered Macrame Panel</p>
+<p class="text-xs text-gray-600 mb-3">Vertical macrame with flowing multi-tier design</p>
+<button onclick="addToCart('WH-004', 'Tiered Macrame Panel')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-005 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-005">
+<div class="aspect-square overflow-hidden">
+<img src="29.jpg" alt="Wall Hanging 005" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-005</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Tribal Pattern Square</p>
+<p class="text-xs text-gray-600 mb-3">Square wall art with traditional tribal motifs</p>
+<button onclick="addToCart('WH-005', 'Tribal Pattern Square')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-006 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-006">
+<div class="aspect-square overflow-hidden">
+<img src="30.jpg" alt="Wall Hanging 006" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-006</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Honeycomb Hex Art</p>
+<p class="text-xs text-gray-600 mb-3">Hexagonal hanging with honeycomb texture</p>
+<button onclick="addToCart('WH-006', 'Honeycomb Hex Art')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-007 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-007">
+<div class="aspect-square overflow-hidden">
+<img src="31.jpg" alt="Wall Hanging 007" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-007</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Jute Dreamcatcher</p>
+<p class="text-xs text-gray-600 mb-3">Oval dreamcatcher with natural feather accents</p>
+<button onclick="addToCart('WH-007', 'Jute Dreamcatcher')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-008 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-008">
+<div class="aspect-square overflow-hidden">
+<img src="32.jpg" alt="Wall Hanging 008" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-008</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Triangle Tassel Art</p>
+<p class="text-xs text-gray-600 mb-3">Triangular hanging with elegant tassel details</p>
+<button onclick="addToCart('WH-008', 'Triangle Tassel Art')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-009 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-009">
+<div class="aspect-square overflow-hidden">
+<img src="33.jpg" alt="Wall Hanging 009" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-009</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Nature Motif Panel</p>
+<p class="text-xs text-gray-600 mb-3">Rectangular panel with natural leaf patterns</p>
+<button onclick="addToCart('WH-009', 'Nature Motif Panel')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-010 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-010">
+<div class="aspect-square overflow-hidden">
+<img src="34.jpg" alt="Wall Hanging 010" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-010</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Celestial Moon Art</p>
+<p class="text-xs text-gray-600 mb-3">Crescent moon hanging with star accents</p>
+<button onclick="addToCart('WH-010', 'Celestial Moon Art')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-011 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-011">
+<div class="aspect-square overflow-hidden">
+<img src="35.jpg" alt="Wall Hanging 011" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-011</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Multi-Circle Installation</p>
+<p class="text-xs text-gray-600 mb-3">Abstract art with overlapping circular elements</p>
+<button onclick="addToCart('WH-011', 'Multi-Circle Installation')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- WH-012 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="WH-012">
+<div class="aspect-square overflow-hidden">
+<img src="36.jpg" alt="Wall Hanging 012" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">WH-012</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Braided Heart Art</p>
+<p class="text-xs text-gray-600 mb-3">Heart-shaped hanging with braided border</p>
+<button onclick="addToCart('WH-012', 'Braided Heart Art')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Christmas Decor -->
+<section id="christmas-decor" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h3 class="text-3xl font-bold text-gray-900 mb-4">Christmas Decor Items</h3>
+<p class="text-gray-600">Festive jute decorations to bring natural warmth to your holiday celebrations</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- CD-001 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-001">
+<div class="aspect-square overflow-hidden">
+<img src="37.jpg" alt="Christmas Decor 001" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-001</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Jute Tree Ornament</p>
+<p class="text-xs text-gray-600 mb-3">Rustic tree-shaped ornament with natural texture</p>
+<button onclick="addToCart('CD-001', 'Jute Tree Ornament')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-002 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-002">
+<div class="aspect-square overflow-hidden">
+<img src="38.jpg" alt="Christmas Decor 002" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-002</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Holiday Wreath</p>
+<p class="text-xs text-gray-600 mb-3">Circular wreath with festive red ribbon accent</p>
+<button onclick="addToCart('CD-002', 'Holiday Wreath')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-003 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-003">
+<div class="aspect-square overflow-hidden">
+<img src="39.jpg" alt="Christmas Decor 003" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-003</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Woven Christmas Stocking</p>
+<p class="text-xs text-gray-600 mb-3">Traditional stocking with intricate woven design</p>
+<button onclick="addToCart('CD-003', 'Woven Christmas Stocking')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-004 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-004">
+<div class="aspect-square overflow-hidden">
+<img src="40.jpg" alt="Christmas Decor 004" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-004</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Rope Star Decoration</p>
+<p class="text-xs text-gray-600 mb-3">Five-pointed star with decorative rope details</p>
+<button onclick="addToCart('CD-004', 'Rope Star Decoration')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-005 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-005">
+<div class="aspect-square overflow-hidden">
+<img src="41.jpg" alt="Christmas Decor 005" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-005</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Twine Bell Ornament</p>
+<p class="text-xs text-gray-600 mb-3">Classic bell ornament with natural twine bow</p>
+<button onclick="addToCart('CD-005', 'Twine Bell Ornament')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-006 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-006">
+<div class="aspect-square overflow-hidden">
+<img src="42.jpg" alt="Christmas Decor 006" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-006</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Woven Angel Ornament</p>
+<p class="text-xs text-gray-600 mb-3">Peaceful angel with delicate woven wings</p>
+<button onclick="addToCart('CD-006', 'Woven Angel Ornament')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-007 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-007">
+<div class="aspect-square overflow-hidden">
+<img src="43.jpg" alt="Christmas Decor 007" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-007</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Festive Jute Garland</p>
+<p class="text-xs text-gray-600 mb-3">Decorative garland with alternating holiday shapes</p>
+<button onclick="addToCart('CD-007', 'Festive Jute Garland')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-008 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-008">
+<div class="aspect-square overflow-hidden">
+<img src="44.jpg" alt="Christmas Decor 008" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-008</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Intricate Snowflake</p>
+<p class="text-xs text-gray-600 mb-3">Six-pointed snowflake with detailed pattern</p>
+<button onclick="addToCart('CD-008', 'Intricate Snowflake')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-009 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-009">
+<div class="aspect-square overflow-hidden">
+<img src="45.jpg" alt="Christmas Decor 009" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-009</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Reindeer Ornament</p>
+<p class="text-xs text-gray-600 mb-3">Adorable reindeer with detailed antler design</p>
+<button onclick="addToCart('CD-009', 'Reindeer Ornament')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-010 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-010">
+<div class="aspect-square overflow-hidden">
+<img src="46.jpg" alt="Christmas Decor 010" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-010</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Holiday Gift Bag</p>
+<p class="text-xs text-gray-600 mb-3">Festive gift bag with drawstring closure</p>
+<button onclick="addToCart('CD-010', 'Holiday Gift Bag')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-011 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-011">
+<div class="aspect-square overflow-hidden">
+<img src="47.jpg" alt="Christmas Decor 011" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-011</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Woven Candle Holder</p>
+<p class="text-xs text-gray-600 mb-3">Stable candle holder with woven jute base</p>
+<button onclick="addToCart('CD-011', 'Woven Candle Holder')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- CD-012 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="CD-012">
+<div class="aspect-square overflow-hidden">
+<img src="48.jpg" alt="Christmas Decor 012" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">CD-012</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Holly Pattern Runner</p>
+<p class="text-xs text-gray-600 mb-3">Festive table runner with holly leaf design</p>
+<button onclick="addToCart('CD-012', 'Holly Pattern Runner')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Napkin Rings -->
+<section id="napkin-rings" class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h3 class="text-3xl font-bold text-gray-900 mb-4">Napkin Rings</h3>
+<p class="text-gray-600">Elegant jute napkin rings to add natural sophistication to your dining table</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- NR-001 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-001">
+<div class="aspect-square overflow-hidden">
+<img src="49.jpg" alt="Napkin Ring 001" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-001</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Classic Round Ring</p>
+<p class="text-xs text-gray-600 mb-3">Simple round napkin ring with elegant weave</p>
+<button onclick="addToCart('NR-001', 'Classic Round Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-002 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-002">
+<div class="aspect-square overflow-hidden">
+<img src="50.jpg" alt="Napkin Ring 002" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-002</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Braided Rope Ring</p>
+<p class="text-xs text-gray-600 mb-3">Twisted rope design with braided texture</p>
+<button onclick="addToCart('NR-002', 'Braided Rope Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-003 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-003">
+<div class="aspect-square overflow-hidden">
+<img src="51.jpg" alt="Napkin Ring 003" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-003</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Geometric Square Ring</p>
+<p class="text-xs text-gray-600 mb-3">Angular square ring with geometric pattern</p>
+<button onclick="addToCart('NR-003', 'Geometric Square Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-004 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-004">
+<div class="aspect-square overflow-hidden">
+<img src="52.jpg" alt="Napkin Ring 004" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-004</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Herringbone Oval Ring</p>
+<p class="text-xs text-gray-600 mb-3">Oval ring with classic herringbone pattern</p>
+<button onclick="addToCart('NR-004', 'Herringbone Oval Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-005 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-005">
+<div class="aspect-square overflow-hidden">
+<img src="53.jpg" alt="Napkin Ring 005" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-005</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Flower Petal Ring</p>
+<p class="text-xs text-gray-600 mb-3">Decorative ring shaped like a blooming flower</p>
+<button onclick="addToCart('NR-005', 'Flower Petal Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-006 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-006">
+<div class="aspect-square overflow-hidden">
+<img src="54.jpg" alt="Napkin Ring 006" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-006</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Honeycomb Hex Ring</p>
+<p class="text-xs text-gray-600 mb-3">Hexagonal ring with honeycomb texture</p>
+<button onclick="addToCart('NR-006', 'Honeycomb Hex Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-007 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-007">
+<div class="aspect-square overflow-hidden">
+<img src="55.jpg" alt="Napkin Ring 007" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-007</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Spiral Twist Ring</p>
+<p class="text-xs text-gray-600 mb-3">Twisted ring with mesmerizing spiral pattern</p>
+<button onclick="addToCart('NR-007', 'Spiral Twist Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-008 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-008">
+<div class="aspect-square overflow-hidden">
+<img src="56.jpg" alt="Napkin Ring 008" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-008</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Botanical Leaf Ring</p>
+<p class="text-xs text-gray-600 mb-3">Leaf-shaped ring with natural vein details</p>
+<button onclick="addToCart('NR-008', 'Botanical Leaf Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-009 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-009">
+<div class="aspect-square overflow-hidden">
+<img src="57.jpg" alt="Napkin Ring 009" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-009</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Diamond Lattice Ring</p>
+<p class="text-xs text-gray-600 mb-3">Diamond-shaped ring with lattice weave</p>
+<button onclick="addToCart('NR-009', 'Diamond Lattice Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-010 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-010">
+<div class="aspect-square overflow-hidden">
+<img src="58.jpg" alt="Napkin Ring 010" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-010</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Bow Tie Ring</p>
+<p class="text-xs text-gray-600 mb-3">Formal bow tie design with center knot</p>
+<button onclick="addToCart('NR-010', 'Bow Tie Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-011 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-011">
+<div class="aspect-square overflow-hidden">
+<img src="59.jpg" alt="Napkin Ring 011" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-011</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Five Point Star Ring</p>
+<p class="text-xs text-gray-600 mb-3">Star-shaped ring with celestial appeal</p>
+<button onclick="addToCart('NR-011', 'Five Point Star Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+<!-- NR-012 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden" id="NR-012">
+<div class="aspect-square overflow-hidden">
+<img src="60.jpg" alt="Napkin Ring 012" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h4 class="font-semibold text-gray-900 mb-1">NR-012</h4>
+<p class="text-sm font-medium text-gray-800 mb-2">Romantic Heart Ring</p>
+<p class="text-xs text-gray-600 mb-3">Heart-shaped ring perfect for special occasions</p>
+<button onclick="addToCart('NR-012', 'Romantic Heart Ring')" class="w-full bg-primary text-white py-2 px-4 !rounded-button whitespace-nowrap text-sm hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Cart -->
+<div id="cart-overlay" class="cart-overlay fixed inset-0 z-50"></div>
+<div id="floating-cart" class="floating-cart fixed top-0 right-0 h-full w-96 bg-white shadow-2xl z-50 overflow-y-auto">
+<div class="p-6 border-b">
+<div class="flex items-center justify-between">
+<h3 class="text-lg font-semibold text-gray-900">Shopping Cart</h3>
+<button onclick="toggleCart()" class="text-gray-400 hover:text-gray-600">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+</div>
+<div id="cart-items" class="p-6">
+<p class="text-gray-500 text-center">Your cart is empty</p>
+</div>
+<div class="p-6 border-t bg-gray-50">
+<button id="whatsapp-checkout" onclick="proceedToWhatsApp()" class="w-full bg-green-600 text-white py-3 px-4 !rounded-button whitespace-nowrap font-medium hover:bg-green-700 transition-colors disabled:opacity-50" disabled>
+<div class="flex items-center justify-center space-x-2">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-whatsapp-line"></i>
+</div>
+<span>Proceed to WhatsApp</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h4 class="text-xl font-['Pacifico'] text-secondary mb-4">Shree Creation HD</h4>
+<p class="text-gray-300 mb-4">Handcrafted jute products made with love and care by skilled artisans</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-300 hover:text-white transition-colors">
+<div class="w-5 h-5 flex items-center justify-center">
+</div>
+</a>
+<a href="https://www.instagram.com/shreecreationhd/" class="text-gray-300 hover:text-white transition-colors">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-instagram-line"></i>
+</div>
+</a>
+<a href="https://wa.me/917428055781" class="text-gray-300 hover:text-white transition-colors">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-whatsapp-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-semibold mb-4">Products</h5>
+<ul class="space-y-2 text-gray-300">
+<li><a href="#jute-mats" class="hover:text-white transition-colors">Table Mats & Rugs</a></li>
+<li><a href="#jute-baskets" class="hover:text-white transition-colors">Baskets & Handbags</a></li>
+<li><a href="#wall-hangings" class="hover:text-white transition-colors">Wall Hangings</a></li>
+<li><a href="#christmas-decor" class="hover:text-white transition-colors">Christmas Decor</a></li>
+<li><a href="#napkin-rings" class="hover:text-white transition-colors">Napkin Rings</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold mb-4">Contact Info</h5>
+<ul class="space-y-2 text-gray-300">
+<li class="flex items-center space-x-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-phone-line"></i>
+</div>
+<span>74280 55781</span>
+</li>
+<li class="flex items-center space-x-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-whatsapp-line"></i>
+</div>
+<span>74280 55781</span>
+</li>
+<li class="flex items-center space-x-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-instagram-line"></i>
+</div>
+<span>shreecreationhd</span>
+</li>
+</ul>
+</div>
+<div>
+
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Shree Creation HD. All rights reserved. Handcrafted with love.</p>
+</div>
+</div>
+</footer>
+<script id="cart-functionality">
+let cart = [];
+let cartCount = 0;
+function updateCartCount() {
+document.getElementById('cart-count').textContent = cartCount;
+const checkoutBtn = document.getElementById('whatsapp-checkout');
+checkoutBtn.disabled = cartCount === 0;
+}
+function addToCart(artNumber, productName) {
+const existingItem = cart.find(item => item.artNumber === artNumber);
+if (existingItem) {
+existingItem.quantity += 1;
+} else {
+cart.push({
+artNumber: artNumber,
+productName: productName,
+quantity: 1
+});
+}
+cartCount++;
+updateCartCount();
+updateCartDisplay();
+// Show success message
+showNotification(`${artNumber} added to cart!`);
+}
+function removeFromCart(artNumber) {
+const itemIndex = cart.findIndex(item => item.artNumber === artNumber);
+if (itemIndex > -1) {
+const item = cart[itemIndex];
+cartCount -= item.quantity;
+cart.splice(itemIndex, 1);
+updateCartCount();
+updateCartDisplay();
+}
+}
+function updateQuantity(artNumber, newQuantity) {
+const item = cart.find(item => item.artNumber === artNumber);
+if (item) {
+const difference = newQuantity - item.quantity;
+item.quantity = newQuantity;
+cartCount += difference;
+if (item.quantity <= 0) {
+removeFromCart(artNumber);
+} else {
+updateCartCount();
+updateCartDisplay();
+}
+}
+}
+function updateCartDisplay() {
+const cartItemsContainer = document.getElementById('cart-items');
+if (cart.length === 0) {
+cartItemsContainer.innerHTML = '<p class="text-gray-500 text-center">Your cart is empty</p>';
+return;
+}
+const cartHTML = cart.map(item => `
+<div class="flex items-center justify-between py-3 border-b border-gray-200">
+<div class="flex-1">
+<h4 class="font-medium text-gray-900">${item.artNumber}</h4>
+<p class="text-sm text-gray-600">${item.productName}</p>
+</div>
+<div class="flex items-center space-x-2">
+<button onclick="updateQuantity('${item.artNumber}', ${item.quantity - 1})" class="w-6 h-6 flex items-center justify-center bg-gray-200 text-gray-600 rounded hover:bg-gray-300">
+<i class="ri-subtract-line text-xs"></i>
+</button>
+<span class="w-8 text-center">${item.quantity}</span>
+<button onclick="updateQuantity('${item.artNumber}', ${item.quantity + 1})" class="w-6 h-6 flex items-center justify-center bg-gray-200 text-gray-600 rounded hover:bg-gray-300">
+<i class="ri-add-line text-xs"></i>
+</button>
+<button onclick="removeFromCart('${item.artNumber}')" class="w-6 h-6 flex items-center justify-center text-red-500 hover:text-red-700 ml-2">
+<i class="ri-delete-bin-line text-sm"></i>
+</button>
+</div>
+</div>
+`).join('');
+cartItemsContainer.innerHTML = cartHTML;
+}
+function toggleCart() {
+const cart = document.getElementById('floating-cart');
+const overlay = document.getElementById('cart-overlay');
+cart.classList.toggle('open');
+overlay.classList.toggle('active');
+}
+function showConfirmationPopup() {
+const popup = document.createElement('div');
+popup.className = 'fixed inset-0 flex items-center justify-center z-[60] bg-black bg-opacity-50';
+popup.innerHTML = `
+<div class="bg-white rounded-lg p-8 max-w-sm w-full mx-4 text-center flex flex-col" style="min-height: 300px;">
+  <h3 class="text-xl font-semibold text-gray-900 mb-4">Confirm Order</h3>
+  <p class="text-gray-600 mb-8">Are you ready to place your order?</p>
+
+  <div class="flex flex-col flex-grow space-y-3">
+    <!-- Top button -->
+    <button onclick="showProcessingPopup()" class="w-full bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors font-medium mb-auto">
+      Place my order
+    </button>
+
+    <!-- Spacer to push close to bottom -->
+    <div class="flex-grow"></div>
+
+    <!-- Close button at the bottom -->
+    <a href="index.html" 
+       class="bg-gray-300 text-gray-800 px-6 py-3 rounded hover:bg-gray-400 text-center mt-auto">
+      Close
+    </a>
+  </div>
+</div>
+
+
+`;
+
+
+document.body.appendChild(popup);
+}
+function closeConfirmationPopup() {
+const popup = document.querySelector('.z-[60]');
+if (popup) {
+popup.remove();
+}
+}
+function showProcessingPopup() {
+closeConfirmationPopup();
+const popupId = 'processing-popup';
+const popup = document.createElement('div');
+popup.id = popupId;
+popup.className = 'fixed inset-0 flex items-center justify-center z-[60] bg-black bg-opacity-50';
+popup.innerHTML = `
+<div class="bg-white rounded-lg p-8 max-w-sm w-full mx-4 text-center">
+<div class="w-16 h-16 mx-auto mb-6">
+<i class="ri-loader-4-line text-4xl text-primary animate-spin"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Processing</h3>
+<p class="text-gray-600 mb-2">Please wait while we prepare invoice</p>
+<p class="text-gray-500">estmd. time <span id="processing-countdown">3</span> seconds</p>
+</div>
+`;
+function showConfirmationPopup() {
+    // Remove old popup if exists
+    const existingPopup = document.getElementById('confirmation-overlay');
+    if (existingPopup) existingPopup.remove();
+
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'confirmation-overlay';
+    overlay.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999] opacity-0 transition-opacity duration-300 p-4';
+
+    // Create popup container (responsive)
+    const popup = document.createElement('div');
+    popup.className = 'bg-white rounded-lg p-6 w-full max-w-sm sm:max-w-md md:max-w-lg text-center shadow-lg relative transform scale-95 transition-transform duration-300';
+
+    // Popup HTML
+    popup.innerHTML = `
+        <!-- Close Button -->
+        <button id="close-popup" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl font-bold leading-none">&times;</button>
+
+        <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-4">Confirm Order</h3>
+        <p class="text-sm sm:text-base text-gray-600 mb-6">Are you ready to place your order?</p>
+
+        <button id="confirm-whatsapp"
+            class="w-full bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors text-sm sm:text-base">
+            Place my order
+        </button>
+    `;
+
+    overlay.appendChild(popup);
+    document.body.appendChild(overlay);
+
+    // Animate in
+    requestAnimationFrame(() => {
+        overlay.classList.remove('opacity-0');
+        popup.classList.remove('scale-95');
+    });
+
+    // Events
+    document.getElementById('confirm-whatsapp').addEventListener('click', proceedToWhatsAppOrder);
+    document.getElementById('close-popup').addEventListener('click', closeConfirmationPopup);
+
+    // Click outside to close
+    overlay.addEventListener('click', function (e) {
+        if (e.target.id === 'confirmation-overlay') {
+            closeConfirmationPopup();
+        }
+    });
+}
+
+function closeConfirmationPopup() {
+    const overlay = document.getElementById('confirmation-overlay');
+    if (!overlay) return;
+    const popup = overlay.querySelector('div');
+
+    // Animate out
+    overlay.classList.add('opacity-0');
+    popup.classList.add('scale-95');
+
+    setTimeout(() => {
+        overlay.remove();
+    }, 300);
+}
+
+function proceedToWhatsAppOrder() {
+    if (!cart || cart.length === 0) return;
+
+    const whatsappNumber = "917428055781"; // With country code
+    let message = "Hi! I'm interested in the following products:\n\n";
+
+    cart.forEach(item => {
+        message += `• ${item.artNumber} - ${item.productName} (Qty: ${item.quantity})\n`;
+    });
+
+    message += `\nTotal Items: ${cartCount}\n\nPlease provide pricing and availability information.\n\nThank you!`;
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    closeConfirmationPopup();
+    setTimeout(() => {
+        window.open(whatsappURL, '_blank');
+    }, 300);
+}
+
+document.body.appendChild(popup);
+let count = 3;
+const countdownInterval = setInterval(() => {
+count--;
+const countdownElement = document.getElementById('processing-countdown');
+if (countdownElement) {
+countdownElement.textContent = count;
+}
+if (count === 0) {
+clearInterval(countdownInterval);
+const processingPopup = document.getElementById(popupId);
+if (processingPopup) {
+processingPopup.remove();
+}
+proceedToWhatsAppOrder();
+}
+}, 1000);
+}
+function proceedToWhatsAppOrder() {
+if (cart.length === 0) return;
+const whatsappNumber = "7428055781";
+let message = "Hi! I'm interested in the following products:\n\n";
+cart.forEach(item => {
+message += `• ${item.artNumber} - ${item.productName} (Qty: ${item.quantity})\n`;
+});
+message += `\nTotal Items: ${cartCount}\n\nPlease provide pricing and availability information.\n\nThank you!`;
+const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+const popup = document.querySelector('.z-[60]');
+if (popup) {
+popup.remove();
+}
+window.open(whatsappURL, '_blank');
+}
+function proceedToWhatsApp() {
+showConfirmationPopup();
+}
+function showNotification(message) {
+const notification = document.createElement('div');
+notification.className = 'fixed top-20 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 transition-opacity duration-300';
+notification.textContent = message;
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.style.opacity = '0';
+setTimeout(() => {
+document.body.removeChild(notification);
+}, 300);
+}, 2000);
+}
+// Close cart when clicking overlay
+document.getElementById('cart-overlay').addEventListener('click', toggleCart);
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      if (targetSection) {
+        const headerHeight = 64; // Adjust sticky header height if needed
+        const targetPosition = targetSection.offsetTop - headerHeight;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+</script>
+<button id="downloadCatalogBtn" title="Download Catalogue" aria-label="Download Catalogue">
+  Download Catalogue
+</button>
+
+<style>
+  #downloadCatalogBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFD700; /* Yellow */
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+  }
+
+  #downloadCatalogBtn:hover {
+    background-color: #FFC107; /* Darker yellow */
+  }
+</style>
+
+<script>
+  document.getElementById('downloadCatalogBtn').addEventListener('click', () => {
+    const catalogUrl = 'catalogue.pdf'; // Replace with your PDF path
+
+    const a = document.createElement('a');
+    a.href = catalogUrl;
+    a.download = 'CATALOGUE.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+</script>
+
+
+
+
+<script src="https://static.readdy.ai/static/share.js"></script></body>
+</html>
